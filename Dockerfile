@@ -1,7 +1,7 @@
 FROM debian
 
 ENV VERIFIER_VERSION 1.6.3
-ENV LOGSTASH_VERSION 7
+ENV LOGSTASH_VERSION 8
 
 # Add unstable repo before updating, since openjdk-11-jre no longer exists in stable repo.
 RUN echo "deb http://deb.debian.org/debian unstable main non-free contrib" | tee -a /etc/apt/sources.list.d/java.list
